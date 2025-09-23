@@ -541,7 +541,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                 if(AutoScale)AppendMenu(hPopupMenu, MF_STRING, 4, L"黑边：禁止");
                 else AppendMenu(hPopupMenu, MF_STRING, 4, L"黑边：允许");
 
-                AppendMenu(hPopupMenu, MF_STRING, 5, L"独立息屏控制");
+                AppendMenu(hPopupMenu, MF_STRING, 5, L"独立息屏控制(Beta)");
                 if(Screenoff)
                 {
                     CheckMenuItem(hPopupMenu, 5, MF_BYCOMMAND | MF_CHECKED);
@@ -678,6 +678,7 @@ LRESULT CALLBACK AboutProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
     static HICON hIcon;
     static HWND LinkHwnd_Home;
     static HWND LinkHwnd_Patron;
+    static HWND LinkHwnd_Github;
     switch(msg)
     {
         case WM_CREATE:
@@ -758,6 +759,21 @@ LRESULT CALLBACK AboutProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             );
             SendMessage(LinkHwnd_Patron, WM_SETFONT, (WPARAM)Font, 0);
 
+            LinkHwnd_Github = CreateWindowEx(
+                NULL, L"SysLink",
+                L"Github开源地址: <a href=\"https://github.com/SiyuanX237/LockEngine\">LockEngine</a>",
+                WS_CHILD | WS_VISIBLE,
+                FontSize.cx * 2,
+                LineAnchorY[5] + FontSize.cy,
+                g_ClientSize.cx,
+                FontSize.cy * 1.5,
+                hwnd,
+                (HMENU)ID_LINK,
+                NULL,
+                NULL
+            );
+            SendMessage(LinkHwnd_Github, WM_SETFONT, (WPARAM)Font, 0);
+
             break;
         }
         case WM_PAINT:
@@ -778,7 +794,7 @@ LRESULT CALLBACK AboutProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             SelectObject(hdc, Font);
             RectDrawText.top = LineAnchorY[1];
             RectDrawText.bottom = RectDrawText.top + FontSize.cy * 1.3;
-            DrawText(hdc, TEXT("版本：1.2.0.0                日期：2025.9.23"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
+            DrawText(hdc, TEXT("版本：1.2.1.0                日期：2025.9.24"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
             MoveToEx(hdc, FontSize.cx * 2, LineAnchorY[2], NULL);
             LineTo(hdc, g_ClientSize.cx - FontSize.cx * 2, LineAnchorY[2]);
 
@@ -786,7 +802,7 @@ LRESULT CALLBACK AboutProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             RectDrawText.right = g_ClientSize.cx - FontSize.cx * 2;
             RectDrawText.top = LineAnchorY[2] + FontSize.cy;
             RectDrawText.bottom = RectDrawText.top + FontSize.cy * 2;
-            DrawText(hdc, TEXT("LockEngine是免费软件，您可以自由分发、复制、运行于任何非商业用途"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
+            DrawText(hdc, TEXT("LockEngine是个免费软件，基于VLC3.0.19开源库制作"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
             SelectObject(hdc, OldFont);
             EndPaint(hwnd, &ps);
             
