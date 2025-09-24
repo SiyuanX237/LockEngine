@@ -16,3 +16,11 @@
 
 ## 使用方法：
 首次使用会自动生成Config.ini和PlayList文件夹。只需简单设置并把待播放视频放入PlayList中，即可使用。息屏超时时间可在Config.ini内修改，单位是秒，默认时间为一分钟
+
+## 原理：
+通过查找锁屏界面的背景图层窗口LockScreenBackstopFrame的Backstop Window的句柄，控制其透明化，并在桌面生成一个顶层窗口用于播放视频
+
+## 视频介绍
+[\[首发\]适用于Win10及以上的动态锁屏壁纸引擎软件](https://www.bilibili.com/video/BV1shJQzQELF/)
+
+# 祝你使用愉快:P
