@@ -84,7 +84,7 @@ bool Enable = true;//启用？
 bool Mute = true;//静音？
 bool AutoScale = true;//去除黑边？
 bool Screenoff = false;//人为息屏控制
-UINT Timeout;//超时时间
+int Timeout;//超时时间
 BYTE TimeoutType;//超时类型
 const BYTE TimeoutFirst = 6;//超时优先
 const BYTE PlayFirst = 7;//完成播放优先
@@ -373,6 +373,11 @@ void LoadPlayList()
         Screenoff = GetPrivateProfileInt(L"Setting", L"Screenoff", false, ConfigPath);
         TimeoutType = GetPrivateProfileInt(L"Setting", L"TimeoutType", TimeoutFirst, ConfigPath);
         Timeout = GetPrivateProfileInt(L"Setting", L"Timeout", 60, ConfigPath);
+        if(Timeout < 1)//防止非法负值
+        {
+            WritePrivateProfileString(L"Setting", L"Timeout", L"60", ConfigPath);
+            Timeout = 60;
+        }
     }
 
     StrNCatW(ListPath, L"\\PlayList", MAX_PATH);
