@@ -355,13 +355,13 @@ void LoadPlayList()
     StrNCatW(ConfigPath, L"\\Config.ini", MAX_PATH);
     if(!PathFileExists(ConfigPath))
     {
-        
         WritePrivateProfileString(L"Setting", L"Enable", L"1", ConfigPath);
         WritePrivateProfileString(L"Setting", L"Mute", L"1", ConfigPath);
         WritePrivateProfileString(L"Setting", L"AutoScale", L"1", ConfigPath);
         WritePrivateProfileString(L"Setting", L"Screenoff", L"0", ConfigPath);
         wchar_t temp[3];
         wsprintf(temp, L"%d", TimeoutFirst);
+        TimeoutType = TimeoutFirst;
         WritePrivateProfileString(L"Setting", L"TimeoutType", temp, ConfigPath);
         WritePrivateProfileString(L"Setting", L"Timeout", L"60", ConfigPath);
     }
@@ -641,10 +641,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                         KillTimer(hwnd, 1);
                         ShutMonitor();
                     }
-                }
-                else
-                {
-                    SetWindowPos(hwnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOREDRAW | SWP_NOOWNERZORDER);
                 }
             }
             else//转到安全桌面了?
