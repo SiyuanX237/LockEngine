@@ -4,7 +4,7 @@
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
 编程不易，打赏随意：
 
-<img src="/images/afdian-ThinkAlone.jpg" height="300" /> <img src="/images/mm_reward.png" height="300" />
+<img src="../images/afdian-ThinkAlone.jpg" height="300" /> <img src="../images/mm_reward.png" height="300" />
 ## 更新记录
 - 1.3.1.0(2025.10.10)
   - 修复了锁屏后任务栏还在屏幕上的问题，有效地保护了隐私
