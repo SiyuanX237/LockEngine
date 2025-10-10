@@ -1,4 +1,4 @@
-# LockEngine(最新版 v1.3.0.0)
+# LockEngine(最新版 v1.3.1.0)
 ### 适用于Win10及以上的锁屏壁纸引擎工具
 ### 作者：[Bilibili - 个人隐思](https://space.bilibili.com/1081364881 "来我主页玩玩ヾ(^∀^)ﾉ")
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
@@ -6,6 +6,8 @@
 
 <img src="/images/afdian-ThinkAlone.jpg" height="300" /> <img src="/images/mm_reward.png" height="300" />
 ## 更新记录
+- 1.3.1.0(2025.10.10)
+  - 修复了锁屏后任务栏还在屏幕上的问题，有效地保护了隐私
 - 1.3.0.0(2025.10.6)
   - 新增了隐藏托盘功能，用户可以选择永久隐藏托盘，以腾出宝贵的任务栏空间
   - 优化了配置文件操作，使得缺失的配置项可以自动补齐
