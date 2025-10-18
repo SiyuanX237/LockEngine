@@ -1,4 +1,4 @@
-# LockEngine(最新版 v1.3.1.0)
+# LockEngine(最新版 v1.3.2.0)
 ### 适用于Win10及以上的锁屏壁纸引擎工具
 ### 作者：[Bilibili - 个人隐思](https://space.bilibili.com/1081364881 "来我主页玩玩ヾ(^∀^)ﾉ")
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
@@ -6,6 +6,8 @@
 
 <img src="/images/afdian-ThinkAlone.jpg" height="300" /> <img src="/images/mm_reward.png" height="300" />
 ## 更新记录
+- 1.3.2.0(2025.10.18)
+  - 添加了设置开机自启功能，但仍局限于登录后生效，暂无办法绕过Session隔离机制
 - 1.3.1.0(2025.10.10)
   - 修复了锁屏后任务栏还在屏幕上的问题，有效地保护了隐私
 - 1.3.0.0(2025.10.6)
@@ -28,6 +30,8 @@
 首次使用会**自动生成Config.ini和PlayList文件夹**。只需简单设置并把待播放视频放入PlayList中，刷新播放列表后即可使用。息屏超时时间可在Config.ini内修改，单位是秒，默认时间为一分钟
 
 程序默认会创建一个系统托盘，以方便设置管理。菜单也提供了**永久关闭托盘**的选项，为用户腾出宝贵的任务栏空间，随后用户可以从配置文件恢复。只不过这么做会使得退出程序比较麻烦，必须进入任务管理器结束进程。因此提供了<ins>再次运行主程序退出</ins>的操作。
+
+添加开机自启，程序会在<b>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup</b>处生成LockEngine.lnk
 
 ## 原理：
 通过查找锁屏界面的背景图层窗口LockScreenBackstopFrame的Backstop Window的句柄，控制其透明化，并在桌面生成一个顶层窗口用于播放视频
