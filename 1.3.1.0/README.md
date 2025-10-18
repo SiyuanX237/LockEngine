@@ -1,4 +1,5 @@
-# LockEngine(最新版 v1.3.1.0)
+# 由于不可抗力原因，本版本代码丢失，但大体与1.3.2.0一致
+# LockEngine(旧版 v1.3.1.0)
 ### 适用于Win10及以上的锁屏壁纸引擎工具
 ### 作者：[Bilibili - 个人隐思](https://space.bilibili.com/1081364881 "来我主页玩玩ヾ(^∀^)ﾉ")
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
