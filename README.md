@@ -1,4 +1,4 @@
-# LockEngine(最新版 v1.3.2.0)
+# LockEngine(最新版 v1.3.3.0)
 ### 适用于Win10及以上的锁屏壁纸引擎工具
 ### 作者：[Bilibili - 个人隐思](https://space.bilibili.com/1081364881 "来我主页玩玩ヾ(^∀^)ﾉ")
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
@@ -6,6 +6,9 @@
 
 <img src="/images/afdian-ThinkAlone.jpg" height="300" /> <img src="/images/mm_reward.png" height="300" />
 ## 更新记录
+- 1.3.3.0(2025.10.21)
+  - 修复了因重启explorer进程导致托盘消失的问题
+  - 优化了自定义屏幕超时机制
 - 1.3.2.0(2025.10.18)
   - 添加了设置开机自启功能，但仍局限于登录后生效，暂无办法绕过Session隔离机制
 - 1.3.1.0(2025.10.10)
