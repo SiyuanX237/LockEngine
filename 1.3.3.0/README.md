@@ -6,7 +6,7 @@
 
 <img src="../images/afdian-ThinkAlone.jpg" height="300" /> <img src="../images/mm_reward.png" height="300" />
 ## 更新记录
-- 1.3.3.0
+- 1.3.3.0(2025.10.21)
   - 修复了因重启explorer进程导致托盘消失的问题
   - 优化了自定义屏幕超时机制
 - 1.3.2.0(2025.10.18)
