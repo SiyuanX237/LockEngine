@@ -875,7 +875,7 @@ LRESULT CALLBACK AboutProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             SelectObject(hdc, Font);
             RectDrawText.top = LineAnchorY[1];
             RectDrawText.bottom = RectDrawText.top + FontSize.cy * 1.3;
-            DrawText(hdc, TEXT("版本：1.3.0.0                日期：2025.10.6"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
+            DrawText(hdc, TEXT("版本：1.3.3.0                日期：2025.10.21"), -1, &RectDrawText, DT_LEFT | DT_SINGLELINE);
             MoveToEx(hdc, FontSize.cx * 2, LineAnchorY[2], NULL);
             LineTo(hdc, g_ClientSize.cx - FontSize.cx * 2, LineAnchorY[2]);
 
@@ -991,3 +991,4 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
 
     return 0;
 }
+
