@@ -940,7 +940,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
         WS_EX_TOOLWINDOW | WS_EX_TOPMOST,
         CLASS_NAME, L"Wallpaper",
         WS_POPUP,
-        0, 0, g_WindowWidth/3 , g_WindowHeight/3,
+        0, 0, g_WindowWidth, g_WindowHeight,
         NULL, NULL, hInstance, NULL
     );
 
@@ -968,3 +968,4 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
 
     return 0;
 }
+
