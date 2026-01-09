@@ -42,8 +42,10 @@
 - 独创独立息屏控制(beta)，可以自由控制锁屏界面的息屏时间，仅修改锁屏界面，退出即恢复
 
 ## 使用方法：
-<img src="/images/config.jpg" height="300" />
-<img src="/images/config2.jpg" height="300" />
+**目录结构：** <br>
+<img src="/images/config.jpg" height="200" /><br>
+**config.ini配置详情：** <br>
+<img src="/images/config2.jpg" height="200" />
 
 首次使用会**自动生成Config.ini和PlayList文件夹**。只需简单设置并把待播放视频放入PlayList中，刷新播放列表后即可使用。息屏超时时间可在Config.ini内修改，单位是秒，默认时间为一分钟
 
