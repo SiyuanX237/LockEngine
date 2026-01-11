@@ -1,4 +1,4 @@
-# LockEngine(最新版 v1.4.1.0)
+# LockEngine(最新版 v1.5.0.0)
 ### 适用于Win10及以上的锁屏壁纸引擎工具
 ### 作者：[Bilibili - 个人隐思](https://space.bilibili.com/1081364881 "来我主页玩玩ヾ(^∀^)ﾉ")
 ### 爱发电主页：[ThinkAlone](https://afdian.com/a/X1415 "您赞助的每一分都是我前进的动力")
@@ -6,6 +6,10 @@
 
 <img src="/images/afdian-ThinkAlone.jpg" height="300" /> <img src="/images/mm_reward.png" height="300" />
 ## 更新记录
+- 1.5.0.0（2025.1.10）
+	- 修复了因为重启explorer导致任务栏和开始菜单无法隐藏问题
+	- 修复了因为视频无法播放导致锁屏背景依旧透明的问题
+	- 添加了托盘右键菜单中利用滚轮快捷调整息屏超时时间功能
 - 1.4.1.0(2025.11.13)
   - 修复了“独立息屏控制”功能时间大于约一分钟而无法起作用的问题
   - 优化了屏幕超时机制
